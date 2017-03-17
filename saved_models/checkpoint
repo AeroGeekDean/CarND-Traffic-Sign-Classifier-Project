@@ -1,0 +1,6 @@
+model_checkpoint_path: "lenet10"
+all_model_checkpoint_paths: "lenet6"
+all_model_checkpoint_paths: "lenet7"
+all_model_checkpoint_paths: "lenet8"
+all_model_checkpoint_paths: "lenet9"
+all_model_checkpoint_paths: "lenet10"
