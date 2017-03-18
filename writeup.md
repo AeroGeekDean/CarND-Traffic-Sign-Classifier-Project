@@ -1,6 +1,6 @@
-#**Traffic Sign Recognition** 
+# **Traffic Sign Recognition** 
 
-##Writeup
+## Writeup
 For Udacity's Self-Driving Car NanoDegree, Term 1, Project 2
 
 ---
