@@ -19,9 +19,9 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./writeup_images/class_histogram.png "Visualization"
-[image2a]: ./writeup_images/preprocessed_img_a.png "Pre-Processing A"
-[image2b]: ./writeup_images/preprocessed_img_b.png "Pre-Processing B"
-[image2c]: ./writeup_images/preprocessed_img_c.png "Pre-Processing C"
+[image21]: ./writeup_images/preprocessed_img_a.png "Pre-Processing A"
+[image22]: ./writeup_images/preprocessed_img_b.png "Pre-Processing B"
+[image23]: ./writeup_images/preprocessed_img_c.png "Pre-Processing C"
 [image3]: ./examples/random_noise.jpg "Random Noise"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
 [image5]: ./examples/placeholder.png "Traffic Sign 2"
@@ -70,9 +70,9 @@ Important Note: Scaling & mean-centering parameters were derived based ONLY on t
 
 Here are a few examples of a traffic sign image in its original 'raw' condition, re-contrasted, and feature normalized.
 
-![pre-processed image A][image2a]
-![pre-processed image B][image2b]
-![pre-processed image C][image2c]
+![pre-processed image A][image21]
+![pre-processed image B][image22]
+![pre-processed image C][image23]
 
 Notice contrast adjustment added image visual clarity **to the human eye/brain**, while feature normalization (across the training set) did the opposite!!
 
