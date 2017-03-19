@@ -33,7 +33,7 @@ The goals / steps of this project are the following:
 ---
 ### Writeup / README
 
-Here is link to my [project code] (https://github.com/AeroGeekDean/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb) as a Jupyter Notebook.
+Here is link to my [project code](https://github.com/AeroGeekDean/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb) as a Jupyter Notebook.
 
 ### Data Set Summary & Exploration
 
