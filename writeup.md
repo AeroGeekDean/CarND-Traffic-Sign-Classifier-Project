@@ -71,7 +71,9 @@ Important Note: Scaling & mean-centering parameters were derived based ONLY on t
 Here are a few examples of a traffic sign image in its original 'raw' condition, re-contrasted, and feature normalized.
 
 ![pre-processed image A][image21]
+
 ![pre-processed image B][image22]
+
 ![pre-processed image C][image23]
 
 Notice contrast adjustment added image visual clarity **to the human eye/brain**, while feature normalization (across the training set) did the opposite!!
