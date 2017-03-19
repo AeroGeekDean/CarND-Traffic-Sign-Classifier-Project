@@ -68,7 +68,7 @@ Next, **feature normalization** were performed on the entire training set to cen
 
 Important Note: Scaling & mean-centering parameters were derived based ONLY on the training set. Later during model performance evaluation, these stored parameters were then applied onto the cross-validation and test data sets.
 
-Here are a few examples of a traffic sign image in its original 'raw' condition, re-contrasted, and feature normalized.
+Here are a few examples of traffic sign images in its original 'raw' condition, re-contrasted, and feature normalized.
 
 ![pre-processed image A][image21]
 
