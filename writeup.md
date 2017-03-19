@@ -19,7 +19,9 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./writeup_images/class_histogram.png "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
+[image2a]: ./writeup_images/preprocessed_img_a.png "Pre-Processing A"
+[image2b]: ./writeup_images/preprocessed_img_b.png "Pre-Processing B"
+[image2c]: ./writeup_images/preprocessed_img_c.png "Pre-Processing C"
 [image3]: ./examples/random_noise.jpg "Random Noise"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
 [image5]: ./examples/placeholder.png "Traffic Sign 2"
@@ -56,17 +58,25 @@ For sanity check, some random samples of the training images were also plotted o
 
 ### Design and Test a Model Architecture
 
-#### 1. Describe how, and identify where in your code, you preprocessed the image data. What tecniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc.
+The code for this step is contained under the **"Step 2: Design and Test a Model Architecture"** section of the Jupyter notebook.
 
-The code for this step is contained in the fourth code cell of the IPython notebook.
+**Data Pre-processing**
 
-As a first step, I decided to convert the images to grayscale because ...
+While looking at some of the training images during the Exploratory Data visualization stage earlier, it was noticed that often the images are dark and have poor contrast. Thus **contrast normalization** were performed on each image individually. This was accomplished by scaling each images constrast to be between the range of [0, 255], utilizing **OpenCV**'s normalize() function.
 
-Here is an example of a traffic sign image before and after grayscaling.
+Next, **feature normalization** were performed on the entire training set to center and scale the data (zero mean, unit variance), utilizing **SkLearn.preprocessing.StandardScaler** feature. Each (32x32x3) image pixel were reshaped into a (1x3072) long feature vector, the entire training set was normalized, then each sample is reshaped back to (32x32x3) image size.
 
-![alt text][image2]
+Important Note: Scaling & mean-centering parameters were derived based ONLY on the training set. Later during model performance evaluation, these stored parameters were then applied onto the cross-validation and test data sets.
 
-As a last step, I normalized the image data because ...
+Here are a few examples of a traffic sign image in its original 'raw' condition, re-contrasted, and feature normalized.
+
+![pre-processed image A][image2a]
+![pre-processed image B][image2b]
+![pre-processed image C][image2c]
+
+Notice contrast adjustment added image visual clarity **to the human eye/brain**, while feature normalization (across the training set) did the opposite!!
+
+**Model Architecture**
 
 #### 2. Describe how, and identify where in your code, you set up training, validation and testing data. How much data was in each set? Explain what techniques were used to split the data into these sets. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, identify where in your code, and provide example images of the additional data)
 
