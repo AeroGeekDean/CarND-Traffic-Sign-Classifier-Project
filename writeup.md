@@ -62,11 +62,11 @@ The code for this step is contained under the **"Step 2: Design and Test a Model
 
 #### Data Pre-processing
 
-**CONTRAST NORMALIZATION**
+##### CONTRAST NORMALIZATION
 
 While looking at some of the training images during the Exploratory Data visualization stage earlier, it was noticed that often the images are dark and have poor contrast. Thus **contrast normalization** were performed on each image individually. This was accomplished by scaling each images constrast to be between the range of [0, 255], utilizing **OpenCV**'s normalize() function.
 
-**FEATURE NORMALIZATION**
+##### FEATURE NORMALIZATION
 
 Next, **feature normalization** were performed on the entire training set to center and scale the data (zero mean, unit variance), utilizing **SkLearn.preprocessing.StandardScaler** feature. Each (32x32x3) image pixel were reshaped into a (1x3072) long feature vector, the entire training set was normalized, then each sample is reshaped back to (32x32x3) image size.
 
