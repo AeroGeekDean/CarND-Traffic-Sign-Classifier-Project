@@ -64,7 +64,7 @@ The code for this step is contained under the **"Step 2: Design and Test a Model
 
 ##### CONTRAST NORMALIZATION
 
-While looking at some of the training images during the Exploratory Data visualization stage earlier, it was noticed that often the images are dark and have poor contrast. Thus contrast normalization were performed on each image individually. This was accomplished by scaling each images constrast to be between the range of [0, 255], utilizing ```OpenCV2.normalize()``` function.
+While looking at some of the training images during the Exploratory Data visualization stage earlier, it was noticed that often the images are dark and have poor contrast. Thus contrast normalization were performed on each image individually. This was accomplished by scaling each images constrast to be between the range of [0, 255], utilizing `'OpenCV2.normalize()'` function.
 
 ##### FEATURE NORMALIZATION
 
