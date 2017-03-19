@@ -60,13 +60,17 @@ For sanity check, some random samples of the training images were also plotted o
 
 The code for this step is contained under the **"Step 2: Design and Test a Model Architecture"** section of the Jupyter notebook.
 
-**Data Pre-processing**
+#### Data Pre-processing
+
+**CONTRAST NORMALIZATION**
 
 While looking at some of the training images during the Exploratory Data visualization stage earlier, it was noticed that often the images are dark and have poor contrast. Thus **contrast normalization** were performed on each image individually. This was accomplished by scaling each images constrast to be between the range of [0, 255], utilizing **OpenCV**'s normalize() function.
 
+**FEATURE NORMALIZATION**
+
 Next, **feature normalization** were performed on the entire training set to center and scale the data (zero mean, unit variance), utilizing **SkLearn.preprocessing.StandardScaler** feature. Each (32x32x3) image pixel were reshaped into a (1x3072) long feature vector, the entire training set was normalized, then each sample is reshaped back to (32x32x3) image size.
 
-Important Note: Scaling & mean-centering parameters were derived based ONLY on the training set. Later during model performance evaluation, these stored parameters were then applied onto the cross-validation and test data sets.
+**Important Note:** Scaling & mean-centering parameters were derived based ONLY on the training set. Later during model performance evaluation, these stored parameters were then applied onto the cross-validation and test data sets.
 
 Here are a few examples of traffic sign images in its original 'raw' condition, re-contrasted, and feature normalized.
 
@@ -76,9 +80,9 @@ Here are a few examples of traffic sign images in its original 'raw' condition, 
 
 ![pre-processed image C][image23]
 
-Notice contrast adjustment added image visual clarity **to the human eye/brain**, while feature normalization (across the training set) did the opposite!!
+**Notice contrast adjustment added image visual clarity TO THE HUMAN EYE/BRAIN, while feature normalization (across the training set) did the opposite!!**
 
-**Model Architecture**
+#### Model Architecture
 
 #### 2. Describe how, and identify where in your code, you set up training, validation and testing data. How much data was in each set? Explain what techniques were used to split the data into these sets. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, identify where in your code, and provide example images of the additional data)
 
