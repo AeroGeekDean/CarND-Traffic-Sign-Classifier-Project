@@ -23,11 +23,36 @@ The goals / steps of this project are the following:
 [image22]: ./writeup_images/preprocessed_img_b.png "Pre-Processing B"
 [image23]: ./writeup_images/preprocessed_img_c.png "Pre-Processing C"
 [image3]: ./test_data_from_web/web_sample_1.png "Collage of German Traffic Signs"
-[image4]: ./test_data_from_web/sample_01.jpg "Traffic Sign 1"
-[image5]: ./test_data_from_web/sample_02.jpg "Traffic Sign 2"
-[image6]: ./test_data_from_web/sample_03.jpg "Traffic Sign 3"
-[image7]: ./test_data_from_web/sample_04.jpg "Traffic Sign 4"
-[image8]: ./test_data_from_web/sample_05.jpg "Traffic Sign 5"
+[image101]: ./test_data_from_web/sample_01.jpg "Traffic Sign 1"
+[image102]: ./test_data_from_web/sample_02.jpg "Traffic Sign 2"
+[image103]: ./test_data_from_web/sample_03.jpg "Traffic Sign 3"
+[image104]: ./test_data_from_web/sample_04.jpg "Traffic Sign 4"
+[image105]: ./test_data_from_web/sample_05.jpg "Traffic Sign 5"
+[image106]: ./test_data_from_web/sample_06.jpg "Traffic Sign 6"
+[image107]: ./test_data_from_web/sample_07.jpg "Traffic Sign 7"
+[image108]: ./test_data_from_web/sample_08.jpg "Traffic Sign 8"
+[image109]: ./test_data_from_web/sample_09.jpg "Traffic Sign 9"
+[image110]: ./test_data_from_web/sample_10.jpg "Traffic Sign 10"
+[image111]: ./test_data_from_web/sample_11.jpg "Traffic Sign 11"
+[image112]: ./test_data_from_web/sample_12.jpg "Traffic Sign 12"
+[image113]: ./test_data_from_web/sample_13.jpg "Traffic Sign 13"
+[image114]: ./test_data_from_web/sample_14.jpg "Traffic Sign 14"
+[image115]: ./test_data_from_web/sample_15.jpg "Traffic Sign 15"
+[image116]: ./test_data_from_web/sample_16.jpg "Traffic Sign 16"
+[image117]: ./test_data_from_web/sample_17.jpg "Traffic Sign 17"
+[image118]: ./test_data_from_web/sample_18.jpg "Traffic Sign 18"
+[image119]: ./test_data_from_web/sample_19.jpg "Traffic Sign 19"
+[image120]: ./test_data_from_web/sample_20.jpg "Traffic Sign 20"
+[image121]: ./test_data_from_web/sample_21.jpg "Traffic Sign 21"
+[image122]: ./test_data_from_web/sample_22.jpg "Traffic Sign 22"
+[image123]: ./test_data_from_web/sample_23.jpg "Traffic Sign 23"
+[image124]: ./test_data_from_web/sample_24.jpg "Traffic Sign 24"
+[image125]: ./test_data_from_web/sample_25.jpg "Traffic Sign 25"
+[image126]: ./test_data_from_web/sample_26.jpg "Traffic Sign 26"
+[image127]: ./test_data_from_web/sample_27.jpg "Traffic Sign 27"
+[image128]: ./test_data_from_web/sample_28.jpg "Traffic Sign 28"
+[image129]: ./test_data_from_web/sample_29.jpg "Traffic Sign 29"
+[image130]: ./test_data_from_web/sample_30.jpg "Traffic Sign 30"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -154,8 +179,9 @@ I found the following collage of German traffic signs [online](https://s-media-c
 
 Below are the 30 extracted examples:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][image101] ![alt text][image102] ![alt text][image103] ![alt text][image104] ![alt text][image105] ![alt text][image106] ![alt text][image107] ![alt text][image108] ![alt text][image109] ![alt text][image110]
+![alt text][image111] ![alt text][image112] ![alt text][image113] ![alt text][image114] ![alt text][image115] ![alt text][image116] ![alt text][image117] ![alt text][image118] ![alt text][image119] ![alt text][image120]
+![alt text][image121] ![alt text][image122] ![alt text][image123] ![alt text][image124] ![alt text][image125] ![alt text][image126] ![alt text][image127] ![alt text][image128] ![alt text][image129] ![alt text][image130]
 
 The first image might be difficult to classify because ...
 
