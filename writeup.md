@@ -86,17 +86,19 @@ Here are a few examples of traffic sign images in its original 'raw' condition, 
 
 The dataset provided has already been split out for training/cross-validation/testing. The split is about:
 
-Training = 67.1%
-Cross-Validation = 8.5%
-Testing 24.4%
+| Data Set | % |
+|-----|-----|
+| Training | 67.1 |
+| Cross-Validation | 8.5 |
+| Testing | 24.4 |
 
-Another validation strategy is to utilize the [K-Fold Cross-Validation method](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#k-fold_cross-validation), unfortunately I ran out of time  thus did not have the chance to iimplement for this project... :\
+Another validation strategy is to utilize the [K-Fold Cross-Validation method](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#k-fold_cross-validation), unfortunately I ran out of time thus did not implement for this project... :\
 
 #### Model Architecture
 
 #### 3. Describe, and identify where in your code, what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
-The code for my final model is located in the seventh cell of the ipython notebook. 
+The code for my final model is located in the **Model Architecture** section of the Jupyter notebook. 
 
 My final model consisted of the following layers:
 
