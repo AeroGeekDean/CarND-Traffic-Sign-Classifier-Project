@@ -23,11 +23,11 @@ The goals / steps of this project are the following:
 [image22]: ./writeup_images/preprocessed_img_b.png "Pre-Processing B"
 [image23]: ./writeup_images/preprocessed_img_c.png "Pre-Processing C"
 [image3]: ./test_data_from_web/web_sample_1.png "Collage of German Traffic Signs"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+[image4]: ./test_data_from_web/sample_01.jpg "Traffic Sign 1"
+[image5]: ./test_data_from_web/sample_02.jpg "Traffic Sign 2"
+[image6]: ./test_data_from_web/sample_03.jpg "Traffic Sign 3"
+[image7]: ./test_data_from_web/sample_04.jpg "Traffic Sign 4"
+[image8]: ./test_data_from_web/sample_05.jpg "Traffic Sign 5"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -152,9 +152,7 @@ he LeNet model by itself was having high-variance / over-fitting issue (good tra
 I found the following collage of German traffic signs [online](https://s-media-cache-ak0.pinimg.com/originals/ce/55/f8/ce55f8319078dab5dbc37c51a77a837f.jpg), and extracted 30 signs from it.
 ![collage of German traffic signs][image3]
 
-
-
-Here are five German traffic signs that I found on the web:
+Below are the 30 extracted examples:
 
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image8]
