@@ -22,7 +22,7 @@ The goals / steps of this project are the following:
 [image21]: ./writeup_images/preprocessed_img_a.png "Pre-Processing A"
 [image22]: ./writeup_images/preprocessed_img_b.png "Pre-Processing B"
 [image23]: ./writeup_images/preprocessed_img_c.png "Pre-Processing C"
-[image3]: ./examples/random_noise.jpg "Random Noise"
+[image3]: ./test_data_from_web/web_sample_1.png "Collage of German Traffic Signs"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
 [image5]: ./examples/placeholder.png "Traffic Sign 2"
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
@@ -141,11 +141,18 @@ My final model results were:
 * validation set accuracy of 93.4%
 * test set accuracy of 91.6%
 
-As discussed earlier, the LeNet model was used as the starting point since it showed good performance in image identification during the class exercise. (ie: "lazy engineer" approach - build upon what already works! :D ) The LeNet model were slightly modified to accommondate the input / output data size. The LeNet model by itself was having high-variance / over-fitting issue (good training performaced coupled with poor cross-validation performance), thus dropout layers were used to mitigate. This, coupled with feature normalization in the data pre-processing, were sufficient to achieve the above results.
+As discussed earlier, the LeNet model was used as the starting point since it showed good performance in image identification during the class exercise. (ie: "lazy engineer" approach - build upon what already works! :D ) The LeNet model were slightly modified to accommondate the input / output data size.
+
+he LeNet model by itself was having high-variance / over-fitting issue (good training performaced coupled with poor cross-validation performance), thus dropout layers were used to mitigate. This, coupled with feature normalization in the data pre-processing, were sufficient to achieve the above results.
 
 ### Test a Model on New Images
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+
+I found the following collage of German traffic signs [online](https://s-media-cache-ak0.pinimg.com/originals/ce/55/f8/ce55f8319078dab5dbc37c51a77a837f.jpg), and extracted 30 signs from it.
+![collage of German traffic signs]
+
+
 
 Here are five German traffic signs that I found on the web:
 
