@@ -80,26 +80,19 @@ Here are a few examples of traffic sign images in its original 'raw' condition, 
 
 ![pre-processed image C][image23]
 
-**Notice** contrast adjustment added image visual clarity TO THE HUMAN EYE/BRAIN, while feature normalization (across the training set) did the opposite!!
+**Notice** contrast adjustment improved image visual clarity TO THE HUMAN EYE/BRAIN, while feature normalization (across the training set) did the opposite!!
+
+#### Validation Strategy
+
+The dataset provided has already been split out for training/cross-validation/testing. The split is about:
+
+Training = 67.1%
+Cross-Validation = 8.5%
+Testing 24.4%
+
+Another validation strategy is to utilize the [K-Fold Cross-Validation method](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#k-fold_cross-validation), unfortunately I ran out of time  thus did not have the chance to iimplement for this project... :\
 
 #### Model Architecture
-
-#### 2. Describe how, and identify where in your code, you set up training, validation and testing data. How much data was in each set? Explain what techniques were used to split the data into these sets. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, identify where in your code, and provide example images of the additional data)
-
-The code for splitting the data into training and validation sets is contained in the fifth code cell of the IPython notebook.  
-
-To cross validate my model, I randomly split the training data into a training set and validation set. I did this by ...
-
-My final training set had X number of images. My validation set and test set had Y and Z number of images.
-
-The sixth code cell of the IPython notebook contains the code for augmenting the data set. I decided to generate additional data because ... To add more data to the the data set, I used the following techniques because ... 
-
-Here is an example of an original image and an augmented image:
-
-![alt text][image3]
-
-The difference between the original data set and the augmented data set is the following ... 
-
 
 #### 3. Describe, and identify where in your code, what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
