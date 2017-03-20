@@ -87,10 +87,10 @@ Here are a few examples of traffic sign images in its original 'raw' condition, 
 The dataset provided has already been split out for training/cross-validation/testing. The split is about:
 
 | Data Set | % |
-|-----|-----|
-| Training  | 67.1  |
-| Cross-Validation  | 8.5  |
-| Testing  | 24.4  |
+|:-----:|:-----:|
+| Training | 67.1 |
+| Cross-Validation | 8.5 |
+| Testing | 24.4 |
 
 Another validation strategy is to utilize the [K-Fold Cross-Validation method](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#k-fold_cross-validation), unfortunately I ran out of time thus did not implement for this project... :\
 
