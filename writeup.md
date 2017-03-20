@@ -106,13 +106,14 @@ My final model consisted of the following:
 
 | Model Layers |
 |-----|
-| **Layer 1:** <ul><li>**Convolution** Input = 32x32x3. Filter = (5x5x3)x6. Output = 28x28x6.</li><li>**Dropout**</li><li>**Activation** ReLU</li><li>**Pooling** Input = 28x28x6. Filter = 2x2. Output = 14x14x6.</li>
+| **Layer 1:**
+|<ul><li>**Convolution** Input = 32x32x3. Filter = (5x5x3)x6. Output = 28x28x6.</li><li>**Dropout**</li><li>**Activation** ReLU</li><li>**Pooling** Input = 28x28x6. Filter = 2x2. Output = 14x14x6.</li></ul>
 |
 |**Layer 2:**
-|>**Convolution** Input = 14x14x6. Filter = (5x5x6)x16. Output = 10x10x16.
-|>**Dropout**
-|>**Activation** ReLU
-|>**Pooling** Input = 10x10x16. Filter = 2x2. Output = 5x5x16.
+|<ul><li>**Convolution** Input = 14x14x6. Filter = (5x5x6)x16. Output = 10x10x16.</li>
+<li>**Dropout**</li>
+<li>**Activation** ReLU</li>
+<li>**Pooling** Input = 10x10x16. Filter = 2x2. Output = 5x5x16.</li></ul>
 |
 |**Flatten.** Input = 5x5x16. Output = 400.
 |
