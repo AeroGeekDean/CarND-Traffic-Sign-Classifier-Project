@@ -60,7 +60,7 @@ For sanity check, some random samples of the training images were also plotted o
 
 The code for this step is contained under the **"Step 2: Design and Test a Model Architecture"** section of the Jupyter notebook.
 
-#### Data Pre-processing
+#### 1. Data Pre-processing
 
 - Contrast Normalization
 
@@ -82,7 +82,7 @@ Here are a few examples of traffic sign images in its original 'raw' condition, 
 
 **Notice** contrast adjustment improved image visual clarity TO THE HUMAN EYE/BRAIN, while feature normalization (across the training set) did the opposite!!
 
-#### Validation Strategy
+#### 2. Validation Strategy
 
 The dataset provided has already been split out for training/cross-validation/testing. The split is about:
 
@@ -94,7 +94,7 @@ The dataset provided has already been split out for training/cross-validation/te
 
 Another validation strategy is to utilize the [K-Fold Cross-Validation method](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#k-fold_cross-validation), unfortunately I ran out of time thus did not implement for this project... :\
 
-#### Model Architecture
+#### 3. Model Architecture
 
 The code for my final model is located in the **Model Architecture** section of the Jupyter notebook. 
 
@@ -118,9 +118,7 @@ My final model consisted of the following:
 |**Layer 5:**<ul><li>**Fully Connected (Logits)**: Input = 84. Output = 43.</li><li>**Softmax**: convert to probabilities</li></ul>
 |
 
-#### Model Training
-
-#### 4. Describe how, and identify where in your code, you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
+#### 4. Model Training
 
 The code for model training follows immediately after the previous section.
 
@@ -133,6 +131,8 @@ Additionally, **mini-batching** was used.
 Ten (10) Epochs of traning were run, with batch size of 128.
 
 The **dropout keep probability** was set at 75% for the training. (No dropout, 100% keep, were used for model predictions.)
+
+#### 5. Solution approach
 
 #### 5. Describe the approach taken for finding a solution. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
