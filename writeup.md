@@ -177,12 +177,12 @@ he LeNet model by itself was having high-variance / over-fitting issue (good tra
 I found the following collage of German traffic signs [online](https://s-media-cache-ak0.pinimg.com/originals/ce/55/f8/ce55f8319078dab5dbc37c51a77a837f.jpg), and extracted 30 signs from it.
 ![collage of German traffic signs][image3]
 
-Below are the 30 extracted examples: (Numbered 1->10 L->R across the top, then 10's in the next row and 20's in the last row.)
+Below are the 30 extracted examples:
 
 |1![alt text][image101]| 2![alt text][image102]| 3![alt text][image103]| 4![alt text][image104]| 5![alt text][image105]| 6![alt text][image106]| 7![alt text][image107]| 8![alt text][image108]| 9![alt text][image109]| 10![alt text][image110]|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|11![alt text][image111]| 12![alt text][image112]| 13![alt text][image113]| ![alt text][image114]| ![alt text][image115]| ![alt text][image116]| ![alt text][image117]| ![alt text][image118]| ![alt text][image119]| ![alt text][image120]|
-|![alt text][image121]| ![alt text][image122]| ![alt text][image123]| ![alt text][image124]| ![alt text][image125]| ![alt text][image126]| ![alt text][image127]| ![alt text][image128]| ![alt text][image129]| ![alt text][image130]|
+|11![alt text][image111]| 12![alt text][image112]| 13![alt text][image113]| 14![alt text][image114]| 15![alt text][image115]| 16![alt text][image116]| 17![alt text][image117]| 18![alt text][image118]| 19![alt text][image119]| 20![alt text][image120]|
+|21![alt text][image121]| 22![alt text][image122]| 23![alt text][image123]| 24![alt text][image124]| 25![alt text][image125]| 26![alt text][image126]| 27![alt text][image127]| 28![alt text][image128]| 29![alt text][image129]| 30![alt text][image130]|
 
 Some of the image classes are **not** in the training set, and were **intentionally** chosen as curiousity to see how the model will perform on them. (Example: 3, 8, 10, 12, 21, 22, 23, 30)
 
