@@ -134,27 +134,14 @@ The **dropout keep probability** was set at 75% for the training. (No dropout, 1
 
 #### 5. Solution approach
 
-#### 5. Describe the approach taken for finding a solution. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
-
-The code for calculating the accuracy of the model is located in the ninth cell of the Ipython notebook.
+The code for calculating the accuracy of the model is located in the code cells as above section of the Jupyter notebook.
 
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+* training set accuracy of 98.8%
+* validation set accuracy of 93.4%
+* test set accuracy of 91.6%
 
-If an iterative approach was chosen:
-* What was the first architecture that was tried and why was it chosen?
-* What were some problems with the initial architecture?
-* How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to over fitting or under fitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
-* Which parameters were tuned? How were they adjusted and why?
-* What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
-
-If a well known architecture was chosen:
-* What architecture was chosen?
-* Why did you believe it would be relevant to the traffic sign application?
-* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
- 
+As discussed earlier, the LeNet model was used as the starting point since it showed good performance in image identification during the class exercise. (ie: "lazy engineer" approach - build upon what already works! :D ) The LeNet model were slightly modified to accommondate the input / output data size. The LeNet model by itself was having high-variance / over-fitting issue (good training performaced coupled with poor cross-validation performance), thus dropout layers were used to mitigate. This, coupled with feature normalization in the data pre-processing, were sufficient to achieve the above results.
 
 ### Test a Model on New Images
 
