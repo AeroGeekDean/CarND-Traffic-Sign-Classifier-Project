@@ -150,7 +150,7 @@ he LeNet model by itself was having high-variance / over-fitting issue (good tra
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 I found the following collage of German traffic signs [online](https://s-media-cache-ak0.pinimg.com/originals/ce/55/f8/ce55f8319078dab5dbc37c51a77a837f.jpg), and extracted 30 signs from it.
-![collage of German traffic signs]
+![collage of German traffic signs][image3]
 
 
 
