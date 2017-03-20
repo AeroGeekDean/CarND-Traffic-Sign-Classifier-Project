@@ -179,9 +179,11 @@ I found the following collage of German traffic signs [online](https://s-media-c
 
 Below are the 30 extracted examples:
 
-![alt text][image101] ![alt text][image102] ![alt text][image103] ![alt text][image104] ![alt text][image105] ![alt text][image106] ![alt text][image107] ![alt text][image108] ![alt text][image109] ![alt text][image110]
-![alt text][image111] ![alt text][image112] ![alt text][image113] ![alt text][image114] ![alt text][image115] ![alt text][image116] ![alt text][image117] ![alt text][image118] ![alt text][image119] ![alt text][image120]
-![alt text][image121] ![alt text][image122] ![alt text][image123] ![alt text][image124] ![alt text][image125] ![alt text][image126] ![alt text][image127] ![alt text][image128] ![alt text][image129] ![alt text][image130]
+| | | | | | | | | | |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|![alt text][image101]| ![alt text][image102]| ![alt text][image103]| ![alt text][image104]| ![alt text][image105]| ![alt text][image106]| ![alt text][image107]| ![alt text][image108]| ![alt text][image109]| ![alt text][image110]|
+|![alt text][image111]| ![alt text][image112]| ![alt text][image113]| ![alt text][image114]| ![alt text][image115]| ![alt text][image116]| ![alt text][image117]| ![alt text][image118]| ![alt text][image119]| ![alt text][image120]|
+|![alt text][image121]| ![alt text][image122]| ![alt text][image123]| ![alt text][image124]| ![alt text][image125]| ![alt text][image126]| ![alt text][image127]| ![alt text][image128]| ![alt text][image129]| ![alt text][image130]|
 
 The first image might be difficult to classify because ...
 
