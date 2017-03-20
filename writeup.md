@@ -96,8 +96,6 @@ Another validation strategy is to utilize the [K-Fold Cross-Validation method](h
 
 #### Model Architecture
 
-#### 3. Describe, and identify where in your code, what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
-
 The code for my final model is located in the **Model Architecture** section of the Jupyter notebook. 
 
 I started with the LeNet architecture provided straight from the lecture, adjusting for the input and output sizes. This gave unacceptable performance over-fitting results, thus a **dropout layer** was added before each activation.
@@ -117,30 +115,24 @@ My final model consisted of the following:
 |
 |**Layer 4:**<ul><li>**Fully Connected**: Input = 120. Output = 84.</li><li>**Dropout**</li><li>**Activation**: ReLU</li></ul>
 |
-|**Layer 5:**<ul><li>**Fully Connected (Logits)**: Input = 84. Output = 43.</li></ul>
+|**Layer 5:**<ul><li>**Fully Connected (Logits)**: Input = 84. Output = 43.</li><li>**Softmax**: convert to probabilities</li></ul>
 |
 
-
-
-| Layer         		|     Description	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
-| RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
- 
-
+#### Model Training
 
 #### 4. Describe how, and identify where in your code, you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-The code for training the model is located in the eigth cell of the ipython notebook. 
+The code for model training follows immediately after the previous section.
 
-To train the model, I used an ....
+The **softmax cross entropy** was the cost function used for the optimizer.
+
+The **Adam optimizer** was used (lifted straight from the LeNet class exercise). It is a Stochastic Gradient Descent (SGD) optimizer with ability to schedule the learning rate adaptively based on the 1st & 2nd moments of the gradients.
+
+Additionally, **mini-batching** was used.
+
+Ten (10) Epochs of traning were run, with batch size of 128.
+
+The **dropout keep probability** was set at 75% for the training. (No dropout, 100% keep, were used for model predictions.)
 
 #### 5. Describe the approach taken for finding a solution. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
