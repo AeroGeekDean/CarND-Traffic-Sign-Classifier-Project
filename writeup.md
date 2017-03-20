@@ -105,44 +105,33 @@ I started with the LeNet architecture provided straight from the lecture, adjust
 My final model consisted of the following:
 
 | Model Layers |
-|:-----|
-| **Layer 1:**
-| >**Convolution** Input = 32x32x3. Filter = (5x5x3)x6. Output = 28x28x6.
-|
-|>**Dropout**
-|
-|>**Activation** ReLU
-|
-|>**Pooling** Input = 28x28x6. Filter = 2x2. Output = 14x14x6.
+|-----|
+
+<ul><li>item1</li><li>item2</li></ul>
+
+| **Layer 1:** <ul><li>>**Convolution** Input = 32x32x3. Filter = (5x5x3)x6. Output = 28x28x6.</li><li>>**Dropout**</li><li>>**Activation** ReLU</li><li>>**Pooling** Input = 28x28x6. Filter = 2x2. Output = 14x14x6.</li>
 |
 |**Layer 2:**
 |>**Convolution** Input = 14x14x6. Filter = (5x5x6)x16. Output = 10x10x16.
-|
 |>**Dropout**
-|
 |>**Activation** ReLU
-|
 |>**Pooling** Input = 10x10x16. Filter = 2x2. Output = 5x5x16.
 |
 |**Flatten.** Input = 5x5x16. Output = 400.
 |
 |**Layer 3:**
 |>**Fully Connected** Input = 400. Output = 120.
-|
 |>**Dropout**
-|
 |>**Activation** ReLU
 |
 |**Layer 4:**
 |>**Fully Connected** Input = 120. Output = 84.
-|
 |>**Dropout**
-|
 |>**Activation** ReLU
 |
 |**Layer 5:**
 |>**Fully Connected (Logits)** Input = 84. Output = 43.
-|
+
 
 
 | Layer         		|     Description	        					| 
