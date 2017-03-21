@@ -193,7 +193,24 @@ Some of the image classes are **not** in the training set, and were **intentiona
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
-Here's graphical result visualzing the prediction performance on each of these images:
+Below is graphical results visualizing the prediction performance on each of these 30 images.
+
+Explaination on each element of the visualization are as follow:
+- Each sample image is shown on the left
+- To the right is plot of probabilities on the classification of the imaage.
+  - X-axis = the 43 possible Classifications (0-42)
+  - Y-axis = softmax probability that the image is of that class
+  - The sum (area under the curve) of all the probabilities should = 1.0
+- The top 3 probable predictions are listed on the right of each plot
+  - The probability [%] is provided
+  - The classification label number and its associated description are written out
+  - Color codes:
+    - Green = Correct prediction
+    - Red = Incorrect prediction
+    - Blue = Image type is **NOT** a part of the original 43 classifications that the model was trained on.
+      - Yes, it was unfair to the model! :)
+  - **Bold** text = Prediction confidence > 90% probability (a number I arbitrary chose)
+
 ![New images prediction performance][image4]
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
