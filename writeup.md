@@ -215,9 +215,9 @@ Of the 30 sample images, 8 were unfair for the model to try to predict (the blue
 
 >**Note**
 >
->If I had more time to really analyze it, we could build a Confusion Matrix *for each class* in order to come up with classification-specific precision and recall metrics.
+>If I had more time to really analyze it, we could build a [Confusion Matrix](http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/) *for each class* in order to come up with classification-specific precision and recall metrics.
 >
->Perhaps tune each classification's probability threshold based on its ROC (Receiver Operating Characteristic) curve to optimize its metrics.
+>Perhaps tune each classification's probability threshold based on its ROC ([Receiver Operating Characteristic](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)) curve to optimize its metrics.
 >
 >But would threshold tuning cause cross-classification issues, in a multi-classification situation? Hmmm.... will have to dig into this more in the future. I'm running out of time to meet my Term 1 deadline, EVEN WITH the automatic 4-weeks extension (after missing the original term1 deadline)!
 >
