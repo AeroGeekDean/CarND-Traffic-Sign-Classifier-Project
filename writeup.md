@@ -220,6 +220,7 @@ Of the 30 sample images, 8 were unfair for the model to try to predict (the blue
 >Perhaps tune each classification's probability threshold based on its ROC (Receiver Operating Characteristic) curve to optimize its metrics.
 >
 >But would threshold tuning cause cross-classification issues, in a multi-classification situation? Hmmm.... will have to dig into this more in the future. I'm running out of time to meet my Term 1 deadline, EVEN WITH the automatic 4-weeks extension (after missing the original term1 deadline)!
+>
 >:(
 
 **Observations**:
