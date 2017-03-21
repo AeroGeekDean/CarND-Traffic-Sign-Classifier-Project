@@ -215,10 +215,13 @@ Explaination on each element of the visualization are as follow:
 
 Of the 30 sample images, 8 were unfair for the model to try to predict (the blue coded labels). Of the remainng 22 images, the model correctly predicted 19 correctly, and 3 incorrectly. **This gives an accuracy of 19/22 = 86.4%**
 
+**Obersvations**:
+
 As can be seen from the classification probability ("confidence") plots, the model:
 1. Got 'lucky' on some images:
-  - low confidence but got it right! (ex: image #17 "30 km/h Speed Limit", denoted by non-bold green text)
+>low confidence but got it right! (ex: image #17 "30 km/h Speed Limit", denoted by non-bold green text)
 2. 'Almost, but not quite' on some images:
-  - correct prediction was the 2nd highest probability, just slightly under the top choice (ex: image #24 "No Passing")
+>correct prediction was the 2nd highest probability, just slightly under the top choice (ex: image #24 "No Passing")
 3. 'It wasn't fair!' complains the model...
-  - Image #28 "Priority road" sign was combined with another sign, thus confused the model. The model wasn't trained on distinguishing multiple signs within an image.
+>Image #28 "Priority road" sign was combined with another sign, thus confused the model. The model wasn't trained on distinguishing multiple signs within an image.
+4. It's also interesting to observe how the model attempts to predict on images types that it was not trained on. (Blue color code)
