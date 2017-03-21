@@ -53,6 +53,7 @@ The goals / steps of this project are the following:
 [image128]: ./test_data_from_web/sample_28.jpg "Traffic Sign 28"
 [image129]: ./test_data_from_web/sample_29.jpg "Traffic Sign 29"
 [image130]: ./test_data_from_web/sample_30.jpg "Traffic Sign 30"
+[image4]: ./writeup_images/web_img_performance.jpg "New image prediction performance"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -172,7 +173,9 @@ he LeNet model by itself was having high-variance / over-fitting issue (good tra
 
 ### Test a Model on New Images
 
-#### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+The code for this portion is contained under the **"Step 3: Test a Model on New Images"** section of the Jupyter notebook.
+
+#### 1. New Images From the Web
 
 I found the following collage of German traffic signs [online](https://s-media-cache-ak0.pinimg.com/originals/ce/55/f8/ce55f8319078dab5dbc37c51a77a837f.jpg), and extracted 30 signs from it.
 ![collage of German traffic signs][image3]
@@ -184,24 +187,14 @@ Below are the 30 extracted examples:
 |11![alt text][image111]| 12![alt text][image112]| 13![alt text][image113]| 14![alt text][image114]| 15![alt text][image115]| 16![alt text][image116]| 17![alt text][image117]| 18![alt text][image118]| 19![alt text][image119]| 20![alt text][image120]|
 |21![alt text][image121]| 22![alt text][image122]| 23![alt text][image123]| 24![alt text][image124]| 25![alt text][image125]| 26![alt text][image126]| 27![alt text][image127]| 28![alt text][image128]| 29![alt text][image129]| 30![alt text][image130]|
 
-Some of the image classes are **not** in the training set, and were **intentionally** chosen as curiousity to see how the model will perform on them. (Example: 3, 8, 10, 12, 21, 22, 23, 30)
+Some of the image classes are **not** in the training set, and were **intentionally** chosen because of my curiousity to see how the model will perform on them. (Example: 3, 8, 10, 12, 21, 22, 23, 30)
 
-The first image might be difficult to classify because ...
+#### 2. Predict the Sign Type for Each Image
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
-The code for making predictions on my final model is located in the tenth cell of the Ipython notebook.
-
-Here are the results of the prediction:
-
-| Image			        |     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
-
+Here's graphical result visualzing the prediction performance on each of these images:
+![New images prediction performance][image4]
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
 
