@@ -191,8 +191,6 @@ Some of the image classes are **not** in the training set, and were **intentiona
 
 #### 2. Predict the Sign Type for Each Image
 
-#### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
-
 Below is graphical results visualizing the prediction performance on each of these 30 images.
 
 Explanation on each element of the visualization are as follow:
