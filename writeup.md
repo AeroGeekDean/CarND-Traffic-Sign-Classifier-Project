@@ -211,7 +211,7 @@ Explanation on each element of the visualization are as follow:
 
 ![New images prediction performance][image4]
 
-Of the 30 sample images, 8 were unfair for the model to try to predict (the blue coded labels). Of the remaining 22 images, the model correctly predicted 19 correctly, and 3 incorrectly. **This gives an accuracy of 19/22 = 86.4%**
+Of the 30 sample images, 8 were unfair for the model to try to predict (the blue coded labels). Of the remaining 22 images, the model predicted 19 correctly, and 3 incorrectly. **This gives an accuracy of 19/22 = 86.4%**
 
 **Observations**:
 
