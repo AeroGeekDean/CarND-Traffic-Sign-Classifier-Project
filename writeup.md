@@ -213,7 +213,8 @@ Explanation on each element of the visualization are as follow:
 
 Of the 30 sample images, 8 were unfair for the model to try to predict (the blue coded labels). Of the remaining 22 images, the model predicted 19 correctly, and 3 incorrectly. **This gives an accuracy of 19/22 = 86.4%**
 
->**Note** If I had more time to really analyze it, we could build a Confusion Matrix *for each class* in order to come up with classification specific precision and recall metrics. Perhaps tune each classification's probability threshold based on its ROC curve (Receiver Operating Characteristic) to optimize its metrics. But would threshold tuning cause cross-classification issues, in a multi-classification situation? Hmmm.... will have to dig into this more in the future. I'm running out of time to meet my Term 1 deadline, EVEN WITH the automatic 4-weeks extension (after missing the original term1 deadline)! :\
+>**Note**
+>If I had more time to really analyze it, we could build a Confusion Matrix *>for each class>* in order to come up with classification-specific precision and recall metrics. Perhaps tune each classification's probability threshold based on its ROC (Receiver Operating Characteristic) curve to optimize its metrics. But would threshold tuning cause cross-classification issues, in a multi-classification situation? Hmmm.... will have to dig into this more in the future. I'm running out of time to meet my Term 1 deadline, EVEN WITH the automatic 4-weeks extension (after missing the original term1 deadline)! :(
 
 **Observations**:
 
