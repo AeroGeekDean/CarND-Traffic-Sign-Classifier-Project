@@ -213,21 +213,12 @@ Explaination on each element of the visualization are as follow:
 
 ![New images prediction performance][image4]
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+Of the 30 sample images, 8 were unfair for the model to try to predict (the blue coded labels). Of the remainng 22 images, the model correctly predicted 19 correctly, and 3 incorrectly. **This gives an accuracy of 19/22 = 86.4%**
 
-#### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
-
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
-
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
-
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
-
-
-For the second image ... 
+As can be seen from the classification probability ("confidence") plots, the model:
+1. Got 'lucky' on some images:
+  - low confidence but got it right! (ex: image #17 "30 km/h Speed Limit", denoted by non-bold green text)
+2. 'Almost, but not quite' on some images:
+  - correct prediction was the 2nd highest probability, just slightly under the top choice (ex: image #24 "No Passing")
+3. 'It wasn't fair!' complains the model...
+  - Image #28 "Priority road" sign was combined with another sign, thus confused the model. The model wasn't trained on distinguishing multiple signs within an image.
