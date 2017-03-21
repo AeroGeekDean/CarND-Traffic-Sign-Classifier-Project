@@ -196,12 +196,12 @@ Some of the image classes are **not** in the training set, and were **intentiona
 Below is graphical results visualizing the prediction performance on each of these 30 images.
 
 Explaination on each element of the visualization are as follow:
-- Each sample image is shown on the left
-- To the right is plot of probabilities on the classification of the imaage.
+- Left column: sample image shown
+- Center column: plot of probabilities on the classification of the imaage
   - X-axis = the 43 possible Classifications (0-42)
   - Y-axis = softmax probability that the image is of that class
   - The sum (area under the curve) of all the probabilities should = 1.0
-- The top 3 probable predictions are listed on the right of each plot
+- Right column: listing of top 3 probable predictions
   - The probability [%] is provided
   - The classification label number and its associated description are written out
   - Color codes:
