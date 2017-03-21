@@ -90,7 +90,7 @@ The code for this step is contained under the **"Step 2: Design and Test a Model
 
 - Contrast Normalization
 
-While looking at some of the training images during the Exploratory Data visualization stage earlier, it was noticed that often the images are dark and have poor contrast. Thus contrast normalization were performed on each image individually. This was accomplished by scaling each images constrast to be between the range of [0, 255], utilizing `'OpenCV2.normalize()'` function.
+While looking at some of the training images during the Exploratory Data visualization stage earlier, it was noticed that often the images are dark and have poor contrast. Thus contrast normalization were performed on each image individually. This was accomplished by scaling each images contrast to be between the range of [0, 255], utilizing `'OpenCV2.normalize()'` function.
 
 - Feature Normalization
 
@@ -154,7 +154,7 @@ The **Adam optimizer** was used (lifted straight from the LeNet class exercise).
 
 Additionally, **mini-batching** was used.
 
-Ten (10) Epochs of traning were run, with batch size of 128.
+Ten (10) Epochs of training were run, with batch size of 128.
 
 The **dropout keep probability** was set at 75% for the training. (No dropout, 100% keep, were used for model predictions.)
 
@@ -167,9 +167,9 @@ My final model results were:
 * validation set accuracy of 93.4%
 * test set accuracy of 91.6%
 
-As discussed earlier, the LeNet model was used as the starting point since it showed good performance in image identification during the class exercise. (ie: "lazy engineer" approach - build upon what already works! :D ) The LeNet model were slightly modified to accommondate the input / output data size.
+As discussed earlier, the LeNet model was used as the starting point since it showed good performance in image identification during the class exercise. (ie: "lazy engineer" approach - build upon what already works! :D ) The LeNet model were slightly modified to accommodate the input / output data size.
 
-he LeNet model by itself was having high-variance / over-fitting issue (good training performaced coupled with poor cross-validation performance), thus dropout layers were used to mitigate. This, coupled with feature normalization in the data pre-processing, were sufficient to achieve the above results.
+he LeNet model by itself was having high-variance / over-fitting issue (good training performance coupled with poor cross-validation performance), thus dropout layers were used to mitigate. This, coupled with feature normalization in the data pre-processing, were sufficient to achieve the above results.
 
 ### Test a Model on New Images
 
@@ -187,7 +187,7 @@ Below are the 30 extracted examples:
 |11![alt text][image111]| 12![alt text][image112]| 13![alt text][image113]| 14![alt text][image114]| 15![alt text][image115]| 16![alt text][image116]| 17![alt text][image117]| 18![alt text][image118]| 19![alt text][image119]| 20![alt text][image120]|
 |21![alt text][image121]| 22![alt text][image122]| 23![alt text][image123]| 24![alt text][image124]| 25![alt text][image125]| 26![alt text][image126]| 27![alt text][image127]| 28![alt text][image128]| 29![alt text][image129]| 30![alt text][image130]|
 
-Some of the image classes are **not** in the training set, and were **intentionally** chosen because of my curiousity to see how the model will perform on them. (Example: 3, 8, 10, 12, 21, 22, 23, 30)
+Some of the image classes are **not** in the training set, and were **intentionally** chosen because of my curiosity to see how the model will perform on them. (Example: 3, 8, 10, 12, 21, 22, 23, 30)
 
 #### 2. Predict the Sign Type for Each Image
 
@@ -195,9 +195,9 @@ Some of the image classes are **not** in the training set, and were **intentiona
 
 Below is graphical results visualizing the prediction performance on each of these 30 images.
 
-Explaination on each element of the visualization are as follow:
+Explanation on each element of the visualization are as follow:
 - Left column: sample image shown
-- Center column: plot of probabilities on the classification of the imaage
+- Center column: plot of probabilities on the classification of the image
   - X-axis = the 43 possible Classifications (0-42)
   - Y-axis = softmax probability that the image is of that class
   - The sum (area under the curve) of all the probabilities should = 1.0
@@ -213,9 +213,9 @@ Explaination on each element of the visualization are as follow:
 
 ![New images prediction performance][image4]
 
-Of the 30 sample images, 8 were unfair for the model to try to predict (the blue coded labels). Of the remainng 22 images, the model correctly predicted 19 correctly, and 3 incorrectly. **This gives an accuracy of 19/22 = 86.4%**
+Of the 30 sample images, 8 were unfair for the model to try to predict (the blue coded labels). Of the remaining 22 images, the model correctly predicted 19 correctly, and 3 incorrectly. **This gives an accuracy of 19/22 = 86.4%**
 
-**Obersvations**:
+**Observations**:
 
 As can be seen from the classification probability ("confidence") plots, the model:
 1. Got 'lucky' on some images:
